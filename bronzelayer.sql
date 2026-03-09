@@ -29,9 +29,9 @@ with (
       tablock
 );
 
-truncate table Bronze.crm_sales_details_info;
+truncate table Bronze.crm_sales_details;
 
-bulk insert Bronze.crm_sales_details_info
+bulk insert Bronze.crm_sales_details
 from 'C:\Users\maste\Downloads\sql-data-warehouse-project\datasets\source_crm\sales_details.csv'
 with (
       firstrow = 2,
@@ -43,9 +43,9 @@ print'--------------------------------';
 print'loading bronze layer';
 print'--------------------------------';
 
-truncate table Bronze.erp_cust_az12_info;
+truncate table Bronze.erp_cust_az12;
 
-bulk insert Bronze.erp_cust_az12_info
+bulk insert Bronze.erp_cust_az12
 from 'C:\Users\maste\Downloads\sql-data-warehouse-project\datasets\source_erp\CUST_AZ12.csv'
 with (
       firstrow = 2,
@@ -53,9 +53,9 @@ with (
       tablock
 );
 
-truncate table Bronze.erp_loc_a101_info;
+truncate table Bronze.erp_loc_a101;
 
-bulk insert Bronze.erp_loc_a101_info
+bulk insert Bronze.erp_loc_a101
 from 'C:\Users\maste\Downloads\sql-data-warehouse-project\datasets\source_erp\loc_a101.csv'
 with (
       firstrow = 2,
@@ -63,9 +63,9 @@ with (
       tablock
 );
 
-truncate table Bronze.erp_px_cat_g1v2_info;
+truncate table Bronze.erp_px_cat_g1v2;
 
-bulk insert Bronze.erp_px_cat_g1v2_info
+bulk insert Bronze.erp_px_cat_g1v2
 from 'C:\Users\maste\Downloads\sql-data-warehouse-project\datasets\source_erp\px_cat_g1v2.csv'
 with (
       firstrow = 2,
